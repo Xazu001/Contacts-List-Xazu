@@ -7,34 +7,6 @@ let contactList = [
         name: "Patrycja Kijek",
         phoneNumber: "Nie pamiętam",
     },
-    {
-        name: "Patrycja Kijek",
-        phoneNumber: "Nie pamiętam",
-    },
-    {
-        name: "Patrycja Kijek",
-        phoneNumber: "Nie pamiętam",
-    },
-    {
-        name: "Patrycja Kijek",
-        phoneNumber: "Nie pamiętam",
-    },
-    {
-        name: "Patrycja Kijek",
-        phoneNumber: "Nie pamiętam",
-    },
-    {
-        name: "Patrycja Kijek",
-        phoneNumber: "Nie pamiętam",
-    },
-    {
-        name: "Patrycja Kijek",
-        phoneNumber: "Nie pamiętam",
-    },
-    {
-        name: "Patrycja Kijek",
-        phoneNumber: "Nie pamiętam",
-    },
 ];
 
 const renderContacts = () => {
