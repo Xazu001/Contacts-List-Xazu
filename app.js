@@ -51,3 +51,4 @@ document.querySelector("#add-contact").addEventListener("click", () => {
 
 renderContacts();
 
+localStorage.setItem("ContactList", contactList);
