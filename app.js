@@ -13,8 +13,6 @@ if (localStorage.getItem("ContactList")) {
     contactList = JSON.parse(localStorage.getItem("ContactList") ?? contactList);
 }
 
-
-
 const renderContacts = () => {
     const contactsContainer = document.querySelector("#contacts");
     contactsContainer.innerHTML = "";
