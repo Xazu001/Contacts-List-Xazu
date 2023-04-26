@@ -9,6 +9,12 @@ let contactList = [
     },
 ];
 
+if (localStorage.getItem("ContactList")) {
+    contactList = JSON.parse(localStorage.getItem("ContactList") ?? contactList);
+}
+
+
+
 const renderContacts = () => {
     const contactsContainer = document.querySelector("#contacts");
     contactsContainer.innerHTML = "";
@@ -41,6 +47,7 @@ document.querySelector("#add-contact").addEventListener("click", () => {
     };
 
     contactList.push(newContact);
+    localStorage.setItem("ContactList", JSON.stringify(contactList));
 
     renderContacts();
 
@@ -50,5 +57,3 @@ document.querySelector("#add-contact").addEventListener("click", () => {
 })
 
 renderContacts();
-
-localStorage.setItem("ContactList", contactList);
